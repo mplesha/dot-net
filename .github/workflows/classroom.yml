@@ -9,4 +9,4 @@
         steps:
           - uses: actions/checkout@v2
           - uses: education/autograding@v1
-          - run: dotnet test -t
+          - run: export DOTNET_CLI_TELEMETRY_OPTOUT=1 && dotnet test
