@@ -3,7 +3,7 @@
     {
       "name": "All tests",
       "setup": "",
-      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && ls /usr/share/dotnet/sdk",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && dotnet test | head -n 1",
       "input": "",
       "output": "",
       "comparison": "included",
