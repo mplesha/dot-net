@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "All tests",
-      "setup": "",
-      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet test -t && tail",
+      "setup": "apt-get install bash",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet test -t && history",
       "input": "",
       "output": "",
       "comparison": "included",
