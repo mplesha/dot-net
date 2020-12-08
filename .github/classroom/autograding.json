@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "All tests",
+      "setup": "",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && cd ./CalculatorTests/ && dotnet --help",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
