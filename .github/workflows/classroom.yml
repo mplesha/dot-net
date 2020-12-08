@@ -11,5 +11,5 @@
           - uses: education/autograding@v1
           - run: |
               node idx.js
-              dotnet test --list-tests --no-build -v:diag | head -n 1
+              dotnet test | head -n 1
               cat prt.txt
