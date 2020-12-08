@@ -3,7 +3,7 @@
     {
       "name": "All tests",
       "setup": "sudo apt-get install bash",
-      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet test -t && history",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet -- test",
       "input": "",
       "output": "",
       "comparison": "included",
