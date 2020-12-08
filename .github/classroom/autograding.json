@@ -3,7 +3,7 @@
     {
       "name": "All tests",
       "setup": "",
-      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && dotnet test --list-tests --no-build -v:diag | head -n 1",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && dotnet test --list-tests --no-build -v:diag | head -n 1 >> prt.txt",
       "input": "",
       "output": "",
       "comparison": "included",
