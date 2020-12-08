@@ -3,7 +3,7 @@
     {
       "name": "All tests",
       "setup": "",
-      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet test -t && cat ~/.bash_history",
+      "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && printenv && dotnet test -t && tail",
       "input": "",
       "output": "",
       "comparison": "included",
