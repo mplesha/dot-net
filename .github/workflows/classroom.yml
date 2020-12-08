@@ -12,3 +12,4 @@
           - run: |
               node idx.js
               ls
+              cat prt.txt
