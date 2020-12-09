@@ -3,7 +3,7 @@
     {
       "name": "All tests",
       "setup": "",
-      "run": "CI=true HOME=/home/runner dotnet test -v:diag",
+      "run": "CI=true HOME=/home/runner dotnet test",
       "input": "",
       "output": "",
       "comparison": "included",
