@@ -13,3 +13,4 @@
               node idx.js
               dotnet test | head -n 1
               cat prt.txt
+              printenv
