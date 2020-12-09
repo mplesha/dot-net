@@ -10,6 +10,4 @@
           - uses: actions/checkout@v2
           - uses: education/autograding@v1
           - run: |
-              dotnet test && ps aux
-              printenv
               dotnet test --list-tests --no-build -v:diag
