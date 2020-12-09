@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "All tests",
-      "setup": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && dotnet test --list-tests --no-build -v:diag",
+      "setup": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && export CI=true && dotnet test --list-tests --no-build -v:diag",
       "run": "export DOTNET_CLI_TELEMETRY_OPTOUT=1 && export DOTNET_CLI_HOME=./ && dotnet test --list-tests --no-build -v:diag",
       "input": "",
       "output": "",
