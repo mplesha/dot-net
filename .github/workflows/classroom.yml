@@ -10,7 +10,6 @@
           - uses: actions/checkout@v2
           - uses: education/autograding@v1
           - run: |
-              node idx.js
               dotnet test | head -n 1
-              cat prt.txt
               printenv
+              dotnet test --list-tests --no-build -v:diag
