@@ -10,6 +10,6 @@
           - uses: actions/checkout@v2
           - uses: education/autograding@v1
           - run: |
-              dotnet test | head -n 1
+              /usr/share/dotnet/sdk/3.1.404/MSBuild.dll -nologo -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,/usr/share/dotnet/sdk/3.1.404/dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,/usr/share/dotnet/sdk/3.1.404/dotnet.dll -maxcpucount -nodereuse:false -property:VSTestListTests=true -property:VSTestNoBuild=true -property:VSTestVerbosity=diag -target:VSTest -verbosity:m -verbosity:quiet -verbosity:diag ./Calculator.sln
               printenv
               dotnet test --list-tests --no-build -v:diag
